@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlKhan Heritage | Fine Pakistani Dining in Gulberg, Lahore</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts: Cinzel Decorative, Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              DEFAULT: '#0f2d1e',
+              dark: '#091c13',
+              light: '#18442e',
+              deep: '#06130d'
+            },
+            gold: {
+              DEFAULT: '#c5a059',
+              light: '#dfb76c',
+              dark: '#9a793a',
+              accent: '#f3e1b6'
+            },
+            ivory: {
+              DEFAULT: '#faf7f2',
+              cream: '#f3ece1',
+              dark: '#e8ddcb'
+            },
+            walnut: {
+              DEFAULT: '#2a1d17',
+              light: '#3d2b23'
+            }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            display: ['Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .bg-jali-pattern {
+      background-image: radial-gradient(#c5a059 0.75px, transparent 0.75px), radial-gradient(#c5a059 0.75px, #0f2d1e 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+      background-opacity: 0.05;
+    }
+    
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #dfb76c 0%, #c5a059 50%, #9a793a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .gold-gradient-bg {
+      background: linear-gradient(135deg, #dfb76c 0%, #c5a059 70%, #9a793a 100%);
+    }
+
+    .gold-border-gradient {
+      border-image: linear-gradient(to right, #c5a059, #dfb76c, #9a793a) 1;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #091c13;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c5a059;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #dfb76c;
+    }
+  </style>
+</head>
+<body class="bg-ivory text-walnut font-sans antialiased selection:bg-gold selection:text-forest-dark overflow-x-hidden">
+
+  <div class="bg-forest-deep text-gold-accent text-xs py-1.5 px-4 text-center border-b border-gold/20 flex justify-between items-center relative z-50">
+    <div class="max-w-7xl mx-auto w-full flex justify-between items-center text-center md:text-left">
+      <span><i class="fa-solid fa-circle-info text-gold mr-2"></i><strong>Disclaimer:</strong> Independent website concept developed for portfolio outreach. Not commissioned or owned by AlKhan Heritage.</span>
+      <a href="https://www.google.com/maps/search/?api=1&query=AlKhan+Heritage+Lahore" target="_blank" class="hidden md:inline-flex items-center text-gold hover:underline">
+        Verify on Google Maps <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-1"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="bg-forest-dark text-ivory-cream text-xs py-2 px-4 border-b border-forest-light hidden md:block">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-6">
+        <span><i class="fa-solid fa-location-dot text-gold mr-2"></i>Umar Saeed Rd, Block C1, Gulberg III, Lahore</span>
+        <span><i class="fa-solid fa-clock text-gold mr-2"></i>Daily: 11:30 AM – 12:00 AM</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="tel:+923254444592" class="hover:text-gold transition-colors"><i class="fa-solid fa-phone text-gold mr-1"></i> +92 325 4444592</a>
+        <div class="h-3 w-[1px] bg-forest-light"></div>
+        <a href="https://facebook.com" target="_blank" class="hover:text-gold transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" class="hover:text-gold transition-colors"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-forest/95 backdrop-blur-md border-b border-gold/30 transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center space-x-3 group">
+          <div class="w-10 h-10 rounded-full border border-gold flex items-center justify-center bg-forest-dark group-hover:border-gold-light transition-all shadow-md">
+            <i class="fa-solid fa-moon text-gold group-hover:scale-110 transition-transform"></i>
+          </div>
+          <div>
+            <span class="font-display text-lg sm:text-xl font-bold tracking-wider text-ivory block leading-none">ALKHAN</span>
+            <span class="font-serif italic text-xs tracking-widest gold-gradient-text block mt-1">HERITAGE LAHORE</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-6 text-sm font-medium text-ivory-cream">
+          <a href="#home" class="hover:text-gold transition-colors">Home</a>
+          <a href="#story" class="hover:text-gold transition-colors">Our Story</a>
+          <a href="#menu" class="hover:text-gold transition-colors">Menu</a>
+          <a href="#signature" class="hover:text-gold transition-colors">Signature Dishes</a>
+          <a href="#experience" class="hover:text-gold transition-colors">Dining Experience</a>
+          <a href="#gallery" class="hover:text-gold transition-colors">Gallery</a>
+          <a href="#location" class="hover:text-gold transition-colors">Location</a>
+        </nav>
+
+        <!-- CTA Buttons -->
+        <div class="hidden md:flex items-center space-x-3">
+          <a href="#menu" class="text-xs uppercase tracking-wider font-semibold text-gold border border-gold px-4 py-2.5 rounded-sm hover:bg-gold hover:text-forest-dark transition-all">
+            Explore Menu
+          </a>
+          <button onclick="openModal()" class="text-xs uppercase tracking-wider font-semibold gold-gradient-bg text-forest-dark px-4 py-2.5 rounded-sm hover:brightness-110 transition-all shadow-md">
+            Reserve Table
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <div class="lg:hidden flex items-center space-x-2">
+          <button onclick="openModal()" class="text-xs font-medium gold-gradient-bg text-forest-dark px-3 py-1.5 rounded-sm md:hidden">
+            Book
+          </button>
+          <button id="mobileMenuBtn" class="text-gold p-2 text-xl focus:outline-none" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars" id="menuIcon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileDrawer" class="hidden lg:hidden bg-forest-dark border-b border-gold/30 px-6 py-6 space-y-4">
+      <a href="#home" onclick="toggleMobileMenu()" class="block text-ivory hover:text-gold font-medium py-1">Home</a>
+      <a href="#story" onclick="toggleMobileMenu()" class="block text-ivory hover:text-gold font-medium py-1">Our Story</a>
+      <a href="#menu" onclick="toggleMobileMenu()" class="block text-ivory hover:text-gold font-medium py-1">Menu</a>
+      <a href="#signature" onclick="toggleMobileMenu()" class="block text-ivory hover:text-gold font-medium py-1">Signature Dishes</a>
+      <a href="#experience" onclick="toggleMobileMenu()" class="block text-ivory hover:text-gold font-medium py-1">Dining Experience</a>
+      <a href="#gallery" onclick="toggleMobileMenu()" class="block text-ivory hover:text-gold font-medium py-1">Gallery</a>
+      <a href="#location" onclick="toggleMobileMenu()" class="block text-ivory hover:text-gold font-medium py-1">Location & Contact</a>
+      <div class="pt-4 border-t border-forest-light flex flex-col gap-2">
+        <a href="#menu" onclick="toggleMobileMenu()" class="text-center text-xs uppercase tracking-wider font-semibold text-gold border border-gold py-2.5 rounded-sm">Explore Menu</a>
+        <button onclick="toggleMobileMenu(); openModal();" class="w-full text-center text-xs uppercase tracking-wider font-semibold gold-gradient-bg text-forest-dark py-2.5 rounded-sm">Reserve Table</button>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="relative bg-forest-dark text-ivory min-h-[85vh] flex items-center justify-center overflow-hidden">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0 opacity-40 mix-blend-overlay">
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80" alt="AlKhan Heritage Ambience" class="w-full h-full object-cover">
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-t from-forest-deep via-forest/80 to-transparent z-1"></div>
+    <div class="absolute inset-0 bg-jali-pattern opacity-10 z-1"></div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-4 text-center py-20">
+      <div class="inline-block border-y border-gold/40 py-1 px-6 mb-6">
+        <span class="text-xs uppercase tracking-[0.3em] text-gold font-medium">Fine Dining • Gulberg III, Lahore</span>
+      </div>
+      <h1 class="font-display text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-6 text-ivory leading-tight">
+        Tradition on <span class="gold-gradient-text italic font-serif">Every Plate.</span>
+      </h1>
+      <p class="font-serif italic text-lg sm:text-xl text-ivory-cream/90 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+        "Discover a memorable dining experience inspired by rich culinary traditions, warm hospitality and flavours worth sharing."
+      </p>
+      
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#menu" class="w-full sm:w-auto gold-gradient-bg text-forest-dark font-semibold px-8 py-3.5 rounded-sm shadow-xl hover:brightness-110 transition-all uppercase tracking-wider text-xs">
+          Explore Our Menu
+        </a>
+        <a href="#location" class="w-full sm:w-auto border border-gold/60 text-ivory hover:bg-gold/10 font-medium px-8 py-3.5 rounded-sm transition-all uppercase tracking-wider text-xs flex items-center justify-center gap-2">
+          <i class="fa-solid fa-compass text-gold"></i> Find Our Location
+        </a>
+      </div>
+
+      <!-- Quick Highlights -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-10 border-t border-gold/20 text-center">
+        <div>
+          <span class="block font-display text-2xl text-gold font-bold">400+</span>
+          <span class="text-xs text-ivory-cream/70 uppercase tracking-widest">Guest Capacity</span>
+        </div>
+        <div>
+          <span class="block font-display text-2xl text-gold font-bold">Lush</span>
+          <span class="text-xs text-ivory-cream/70 uppercase tracking-widest">Garden Dining</span>
+        </div>
+        <div>
+          <span class="block font-display text-2xl text-gold font-bold">Authentic</span>
+          <span class="text-xs text-ivory-cream/70 uppercase tracking-widest">Live BBQ & Karahi</span>
+        </div>
+        <div>
+          <span class="block font-display text-2xl text-gold font-bold">Valet</span>
+          <span class="text-xs text-ivory-cream/70 uppercase tracking-widest">Golf Kart Welcome</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="story" class="py-24 bg-ivory relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Image Composition -->
+        <div class="lg:col-span-6 relative">
+          <div class="relative rounded-lg overflow-hidden shadow-2xl border-2 border-gold/30">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=80" alt="AlKhan Heritage Lahore Dining" class="w-full h-[480px] object-cover">
+          </div>
+          <!-- Decorative Frame Overlay -->
+          <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-forest border-2 border-gold p-4 shadow-xl hidden sm:flex flex-col justify-center items-center text-center">
+            <i class="fa-solid fa-utensils text-gold text-2xl mb-2"></i>
+            <span class="font-display text-sm text-ivory font-bold uppercase tracking-wider">Heritage Cuisine</span>
+            <span class="text-[10px] text-gold-accent mt-1">Gulberg III • Lahore</span>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="flex items-center space-x-3">
+            <span class="h-[1px] w-12 bg-gold"></span>
+            <span class="text-xs uppercase tracking-widest font-semibold text-gold-dark">Our Heritage & Passion</span>
+          </div>
+          
+          <h2 class="font-display text-3xl sm:text-4xl text-forest font-bold leading-tight">
+            Preserving Pakistan’s Rich <span class="font-serif italic font-normal text-gold-dark">Culinary Tapestry</span>
+          </h2>
+
+          <p class="text-walnut/80 leading-relaxed text-sm sm:text-base">
+            Situated on Umar Saeed Road in Gulberg III, Lahore, <strong>AlKhan Heritage</strong> brings together the timeless grandeur of Mughal-inspired architecture and the rich, slow-cooked flavours of regional Pakistani gastronomy.
+          </p>
+
+          <p class="text-walnut/80 leading-relaxed text-sm sm:text-base">
+            From our sizzling Shinwari BBQ coals to rich handi karahis and fragrant biryanis, every dish is crafted with authentic ground spices, fresh hand-picked produce, and centuries-old culinary tradition. Whether seated in our grand indoor halls or amidst our illuminated garden fountains, experience hospitality crafted for life’s grand celebrations.
+          </p>
+
+          <div class="pt-4 grid grid-cols-2 gap-4 border-t border-gold/20">
+            <div class="flex items-start space-x-3">
+              <i class="fa-solid fa-leaf text-gold mt-1"></i>
+              <div>
+                <h4 class="font-bold text-sm text-forest">Fresh & Organic</h4>
+                <p class="text-xs text-walnut/70">Hand-selected meats & aromatic local spices</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-3">
+              <i class="fa-solid fa-users text-gold mt-1"></i>
+              <div>
+                <h4 class="font-bold text-sm text-forest">Family Atmosphere</h4>
+                <p class="text-xs text-walnut/70">Spacious seating for family gatherings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="py-24 bg-forest-dark text-ivory relative">
+    <div class="absolute inset-0 bg-jali-pattern opacity-5"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs uppercase tracking-widest text-gold font-semibold">Exquisite Culinary Offerings</span>
+        <h2 class="font-display text-3xl sm:text-5xl font-bold mt-2 text-ivory">Explore Our <span class="gold-gradient-text italic font-serif">Menu</span></h2>
+        <p class="text-ivory-cream/70 text-sm mt-3 font-light">
+          Browse through our verified dish selection. Click items to build your group order inquiry preview.
+        </p>
+      </div>
+
+      <!-- Controls: Search & Categories -->
+      <div class="mb-10 space-y-6">
+        <!-- Search Bar -->
+        <div class="max-w-md mx-auto relative">
+          <input type="text" id="menuSearch" placeholder="Search dish name e.g., Karahi, Biryani, Kebab..." class="w-full bg-forest text-ivory placeholder-ivory-cream/50 border border-gold/30 rounded-full py-2.5 pl-10 pr-4 text-sm focus:outline-none focus:border-gold">
+          <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-gold text-xs"></i>
+        </div>
+
+        <!-- Filter Buttons Carousel / Grid -->
+        <div class="flex items-center justify-center flex-wrap gap-2 text-xs" id="categoryFilters">
+          <button onclick="filterCategory('All')" class="cat-btn active bg-gold text-forest-dark font-semibold px-4 py-2 rounded-full transition-all">All Items</button>
+          <button onclick="filterCategory('Starters')" class="cat-btn bg-forest text-ivory border border-gold/30 hover:border-gold px-4 py-2 rounded-full transition-all">Starters</button>
+          <button onclick="filterCategory('BBQ & Grills')" class="cat-btn bg-forest text-ivory border border-gold/30 hover:border-gold px-4 py-2 rounded-full transition-all">BBQ & Grills</button>
+          <button onclick="filterCategory('Karahi & Handi')" class="cat-btn bg-forest text-ivory border border-gold/30 hover:border-gold px-4 py-2 rounded-full transition-all">Karahi & Handi</button>
+          <button onclick="filterCategory('Rice & Biryani')" class="cat-btn bg-forest text-ivory border border-gold/30 hover:border-gold px-4 py-2 rounded-full transition-all">Rice & Biryani</button>
+          <button onclick="filterCategory('Breads')" class="cat-btn bg-forest text-ivory border border-gold/30 hover:border-gold px-4 py-2 rounded-full transition-all">Breads</button>
+          <button onclick="filterCategory('Desserts')" class="cat-btn bg-forest text-ivory border border-gold/30 hover:border-gold px-4 py-2 rounded-full transition-all">Desserts</button>
+          <button onclick="filterCategory('Beverages')" class="cat-btn bg-forest text-ivory border border-gold/30 hover:border-gold px-4 py-2 rounded-full transition-all">Beverages</button>
+        </div>
+      </div>
+
+      <!-- Menu Grid -->
+      <div id="menuGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+
+      <!-- Order Preview Floating Bar -->
+      <div id="orderDrawer" class="mt-12 bg-forest border border-gold/40 p-6 rounded-lg flex flex-col md:flex-row items-center justify-between gap-4 shadow-2xl">
+        <div class="flex items-center space-x-4">
+          <div class="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xl">
+            <i class="fa-solid fa-receipt"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-ivory">Planning a Reservation or Delivery Inquiry?</h4>
+            <p class="text-xs text-ivory-cream/70" id="selectedItemsCount">0 items selected in your calculation list.</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4 w-full md:w-auto justify-end">
+          <span class="text-lg font-display font-bold text-gold" id="totalPriceCalc">PKR 0</span>
+          <button onclick="openModalWithItems()" class="gold-gradient-bg text-forest-dark text-xs uppercase font-bold tracking-wider px-5 py-2.5 rounded hover:brightness-110 transition-all">
+            Inquire Reservation
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="signature" class="py-24 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-gold-dark font-semibold">Chef's Recommendations</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold text-forest mt-1">AlKhan <span class="font-serif italic font-normal text-gold-dark">Signature Dishes</span></h2>
+        </div>
+        <p class="text-walnut/70 text-sm max-w-md mt-4 md:mt-0">
+          Handcrafted masterpieces slow-cooked on traditional charcoal pits and brass handis for an unforgettably authentic taste.
+        </p>
+      </div>
+
+      <!-- Editorial Asymmetric Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- Main Featured Signature -->
+        <div class="lg:col-span-7 bg-white rounded-lg overflow-hidden border border-gold/20 shadow-lg flex flex-col justify-between group">
+          <div class="relative overflow-hidden h-80 sm:h-96">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" alt="Special Mandi Platter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-4 left-4 bg-forest text-gold text-xs px-3 py-1 font-bold uppercase tracking-wider rounded">
+              Chef's Special
+            </div>
+            <div class="absolute bottom-4 right-4 bg-forest-dark/90 text-gold font-display font-bold text-lg px-4 py-1.5 rounded border border-gold/30">
+              PKR 3,850
+            </div>
+          </div>
+          <div class="p-8">
+            <span class="text-xs text-gold-dark font-semibold uppercase tracking-wider">Royal Feasts</span>
+            <h3 class="font-display text-2xl font-bold text-forest mt-1 mb-3">AlKhan Heritage Special Mandi Platter</h3>
+            <p class="text-walnut/70 text-sm leading-relaxed mb-6">
+              A lavish feast serving 3-4 guests featuring aromatic long-grain basmati rice cooked with secret Yemeni-Lahori spice blends, topped with fall-off-the-bone lamb shanks, charbroiled chicken, and roasted almonds & raisins.
+            </p>
+            <button onclick="quickAdd('AlKhan Special Mandi Platter', 3850)" class="text-xs uppercase font-bold text-forest border-b-2 border-gold hover:text-gold-dark transition-colors inline-flex items-center gap-2">
+              Add to Inquiry <i class="fa-solid fa-plus text-gold"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Side 2 Column Stack -->
+        <div class="lg:col-span-5 flex flex-col gap-8">
+          
+          <!-- Signature Card 2 -->
+          <div class="bg-white rounded-lg overflow-hidden border border-gold/20 shadow-md flex flex-col sm:flex-row group">
+            <div class="sm:w-2/5 relative h-48 sm:h-auto overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=600&q=80" alt="Mutton Shinwari Karahi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="sm:w-3/5 p-5 flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] text-gold-dark font-semibold uppercase tracking-wider">Traditional Karahi</span>
+                <h4 class="font-display text-lg font-bold text-forest mt-0.5">Mutton Shinwari Karahi</h4>
+                <p class="text-walnut/70 text-xs mt-2 line-clamp-2">Cooked in pure lamb fat, fresh tomatoes, coarse sea salt, and green chillies on high flame.</p>
+              </div>
+              <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-bold text-forest">PKR 2,450 <span class="text-[10px] text-walnut/50 font-normal">/ Half KG</span></span>
+                <button onclick="quickAdd('Mutton Shinwari Karahi', 2450)" class="text-xs text-gold-dark font-bold hover:underline">+ Add</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Signature Card 3 -->
+          <div class="bg-white rounded-lg overflow-hidden border border-gold/20 shadow-md flex flex-col sm:flex-row group">
+            <div class="sm:w-2/5 relative h-48 sm:h-auto overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=600&q=80" alt="Chillam Biryani" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="sm:w-3/5 p-5 flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] text-gold-dark font-semibold uppercase tracking-wider">Claypot Dum Special</span>
+                <h4 class="font-display text-lg font-bold text-forest mt-0.5">Chillam Dar Mutton Biryani</h4>
+                <p class="text-walnut/70 text-xs mt-2 line-clamp-2">Sealed in handi with wheat dough, infused with saffron, kewra, and tender marinated mutton chunks.</p>
+              </div>
+              <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-bold text-forest">PKR 1,650</span>
+                <button onclick="quickAdd('Chillam Dar Mutton Biryani', 1650)" class="text-xs text-gold-dark font-bold hover:underline">+ Add</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="experience" class="py-24 bg-forest text-ivory relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-widest text-gold font-semibold">Ambience & Hospitality</span>
+        <h2 class="font-display text-3xl sm:text-5xl font-bold mt-2">An Unforgettable <span class="gold-gradient-text italic font-serif">Atmosphere</span></h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-forest-dark border border-gold/20 p-8 rounded-lg text-center hover:border-gold/60 transition-all">
+          <div class="w-16 h-16 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center mx-auto mb-6 text-gold text-2xl">
+            <i class="fa-solid fa-tree"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold mb-3">Outdoor Garden & Fountains</h3>
+          <p class="text-ivory-cream/70 text-sm leading-relaxed">
+            Dine beneath twinkling fairytale lights alongside tranquil fountains and lush landscaped greenery in Gulberg.
+          </p>
+        </div>
+
+        <div class="bg-forest-dark border border-gold/20 p-8 rounded-lg text-center hover:border-gold/60 transition-all">
+          <div class="w-16 h-16 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center mx-auto mb-6 text-gold text-2xl">
+            <i class="fa-solid fa-car"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold mb-3">Golf Kart & Valet Welcome</h3>
+          <p class="text-ivory-cream/70 text-sm leading-relaxed">
+            Enjoy premium golf kart shuttle transfer from our spacious secure parking area directly to your dining table.
+          </p>
+        </div>
+
+        <div class="bg-forest-dark border border-gold/20 p-8 rounded-lg text-center hover:border-gold/60 transition-all">
+          <div class="w-16 h-16 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center mx-auto mb-6 text-gold text-2xl">
+            <i class="fa-solid fa-users-viewfinder"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold mb-3">Grand Family Halls</h3>
+          <p class="text-ivory-cream/70 text-sm leading-relaxed">
+            Generous hall seating designed to accommodate large family reunions, corporate dinners, and special occasions.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="py-24 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs uppercase tracking-widest text-gold-dark font-semibold">Visual Journey</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-forest mt-1">Heritage <span class="font-serif italic text-gold-dark">Gallery</span></h2>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="galleryGrid">
+        <div class="relative overflow-hidden rounded-lg shadow-md group cursor-pointer h-60" onclick="openLightbox('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80', 'Grand Dining Ambience')">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Dining Ambience" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-forest-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-gold text-2xl">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded-lg shadow-md group cursor-pointer h-60" onclick="openLightbox('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80', 'Mandi & BBQ Platter')">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Mandi Feast" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-forest-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-gold text-2xl">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded-lg shadow-md group cursor-pointer h-60" onclick="openLightbox('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80', 'Warm Restaurant Lighting')">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Interior" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-forest-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-gold text-2xl">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded-lg shadow-md group cursor-pointer h-60" onclick="openLightbox('https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=1200&q=80', 'Aromatic Claypot Biryani')">
+          <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=600&q=80" alt="Claypot Biryani" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-forest-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-gold text-2xl">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="location" class="py-24 bg-forest-dark text-ivory relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Address Info -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs uppercase tracking-widest text-gold font-semibold">Visit Us</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold">Location & <span class="gold-gradient-text italic font-serif">Contact</span></h2>
+          <p class="text-ivory-cream/70 text-sm">
+            Conveniently situated in the heart of Gulberg III, Lahore with full valet parking and golf kart guest reception.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 rounded bg-forest border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-1">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-ivory">Verified Address</h4>
+                <p class="text-xs text-ivory-cream/70 mt-0.5">Umar Saeed Road, MM Alam Rd, Block C1, Gulberg III, Lahore, Punjab, Pakistan</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 rounded bg-forest border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-1">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-ivory">Phone & Reservations</h4>
+                <p class="text-xs text-ivory-cream/70 mt-0.5"><a href="tel:+923254444592" class="hover:text-gold transition-colors">+92 325 4444592</a></p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 rounded bg-forest border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-1">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-ivory">Opening Hours</h4>
+                <p class="text-xs text-ivory-cream/70 mt-0.5">Monday – Sunday: 11:30 AM to 12:00 AM Midnight</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 flex items-center space-x-3">
+            <a href="https://www.google.com/maps/search/?api=1&query=AlKhan+Heritage+Lahore" target="_blank" class="gold-gradient-bg text-forest-dark font-bold text-xs uppercase tracking-wider px-5 py-3 rounded shadow hover:brightness-110 transition-all inline-flex items-center gap-2">
+              <i class="fa-solid fa-map-location-dot"></i> Get Directions on Google Maps
+            </a>
+          </div>
+        </div>
+
+        <!-- Map Placeholder / Embed frame -->
+        <div class="lg:col-span-7 bg-forest rounded-lg overflow-hidden border border-gold/30 shadow-2xl relative min-h-[350px]">
+          <iframe 
+            title="AlKhan Heritage Location Map"
+            src="https://maps.google.com/maps?q=AlKhan%20Heritage%20Lahore&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            class="w-full h-full min-h-[380px] border-0" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-forest-deep text-ivory border-t border-gold/30 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <div class="space-y-4">
+          <a href="#" class="flex items-center space-x-3">
+            <div class="w-8 h-8 rounded-full border border-gold flex items-center justify-center bg-forest-dark">
+              <i class="fa-solid fa-moon text-gold text-xs"></i>
+            </div>
+            <span class="font-display font-bold text-lg text-ivory tracking-wider">ALKHAN <span class="text-gold">HERITAGE</span></span>
+          </a>
+          <p class="text-xs text-ivory-cream/60 leading-relaxed">
+            Bringing authentic Pakistani culinary tradition, Mughal aesthetics, and warm guest hospitality to Gulberg III, Lahore.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-display text-sm font-bold text-gold uppercase tracking-wider mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-xs text-ivory-cream/70">
+            <li><a href="#home" class="hover:text-gold transition-colors">Home</a></li>
+            <li><a href="#story" class="hover:text-gold transition-colors">Our Heritage</a></li>
+            <li><a href="#menu" class="hover:text-gold transition-colors">Menu & Pricing</a></li>
+            <li><a href="#signature" class="hover:text-gold transition-colors">Signature Dishes</a></li>
+            <li><a href="#experience" class="hover:text-gold transition-colors">Dining Experience</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display text-sm font-bold text-gold uppercase tracking-wider mb-4">Contact Info</h4>
+          <p class="text-xs text-ivory-cream/70 mb-2">Gulberg III, Lahore, Pakistan</p>
+          <p class="text-xs text-ivory-cream/70 mb-2">+92 325 4444592</p>
+          <p class="text-xs text-ivory-cream/70">Daily 11:30 AM - 12:00 AM</p>
+        </div>
+
+        <div>
+          <h4 class="font-display text-sm font-bold text-gold uppercase tracking-wider mb-4">Connect With Us</h4>
+          <div class="flex space-x-3">
+            <a href="https://facebook.com" target="_blank" class="w-9 h-9 rounded bg-forest border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-forest-dark transition-all">
+              <i class="fa-brands fa-facebook-f text-sm"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="w-9 h-9 rounded bg-forest border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-forest-dark transition-all">
+              <i class="fa-brands fa-instagram text-sm"></i>
+            </a>
+            <a href="https://wa.me/923254444592" target="_blank" class="w-9 h-9 rounded bg-forest border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-forest-dark transition-all">
+              <i class="fa-brands fa-whatsapp text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-forest-light flex flex-col sm:flex-row justify-between items-center text-xs text-ivory-cream/50">
+        <p>© 2026 AlKhan Heritage Lahore. Concept Website Design.</p>
+        <p class="mt-2 sm:mt-0">Independent portfolio demonstration concept.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="reservationModal" class="fixed inset-0 z-50 bg-forest-deep/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-forest border border-gold/40 rounded-lg max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-gold hover:text-ivory text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="text-center mb-6">
+        <span class="text-xs uppercase tracking-widest text-gold font-semibold">Table Booking Inquiry</span>
+        <h3 class="font-display text-2xl font-bold text-ivory mt-1">Reserve Your Experience</h3>
+      </div>
+
+      <form id="resForm" onsubmit="handleReservation(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-ivory-cream uppercase tracking-wider mb-1">Full Name</label>
+          <input type="text" required placeholder="e.g. Usman Chaudhry" class="w-full bg-forest-dark border border-gold/30 rounded py-2 px-3 text-sm text-ivory focus:outline-none focus:border-gold">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-ivory-cream uppercase tracking-wider mb-1">Phone Number (+92)</label>
+            <input type="tel" required placeholder="+92 300 1234567" class="w-full bg-forest-dark border border-gold/30 rounded py-2 px-3 text-sm text-ivory focus:outline-none focus:border-gold">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-ivory-cream uppercase tracking-wider mb-1">Guest Count</label>
+            <select class="w-full bg-forest-dark border border-gold/30 rounded py-2 px-3 text-sm text-ivory focus:outline-none focus:border-gold">
+              <option>2 Guests</option>
+              <option>3-4 Guests</option>
+              <option>5-8 Guests</option>
+              <option>9+ Guests (Large Party)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-ivory-cream uppercase tracking-wider mb-1">Date</label>
+            <input type="date" required class="w-full bg-forest-dark border border-gold/30 rounded py-2 px-3 text-sm text-ivory focus:outline-none focus:border-gold">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-ivory-cream uppercase tracking-wider mb-1">Seating Preference</label>
+            <select class="w-full bg-forest-dark border border-gold/30 rounded py-2 px-3 text-sm text-ivory focus:outline-none focus:border-gold">
+              <option>Outdoor Garden & Fountain</option>
+              <option>Indoor Main Hall</option>
+              <option>Private Family Area</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-ivory-cream uppercase tracking-wider mb-1">Special Requests or Dish Inquiries</label>
+          <textarea id="modalNotes" rows="2" placeholder="Anniversary, birthday setup, or pre-order notes..." class="w-full bg-forest-dark border border-gold/30 rounded py-2 px-3 text-sm text-ivory focus:outline-none focus:border-gold"></textarea>
+        </div>
+
+        <button type="submit" class="w-full gold-gradient-bg text-forest-dark font-bold text-xs uppercase tracking-wider py-3 rounded shadow hover:brightness-110 transition-all mt-4">
+          Send Reservation Request
+        </button>
+
+        <p class="text-[11px] text-center text-ivory-cream/60 mt-2">
+          Or direct phone reservation: <a href="tel:+923254444592" class="text-gold font-bold hover:underline">+92 325 4444592</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <div id="lightbox" class="fixed inset-0 z-50 bg-forest-deep/90 backdrop-blur-md hidden items-center justify-center p-4" onclick="closeLightbox()">
+    <div class="relative max-w-4xl w-full text-center" onclick="event.stopPropagation()">
+      <button onclick="closeLightbox()" class="absolute -top-10 right-0 text-gold text-2xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="lightboxImg" src="" alt="Gallery Preview" class="max-h-[80vh] mx-auto rounded border border-gold/30 shadow-2xl">
+      <p id="lightboxCaption" class="text-gold font-display text-sm mt-4 font-bold"></p>
+    </div>
+  </div>
+
+  <script>
+    const menuData = [
+      { id: 1, name: "AlKhan Special Mandi Platter", category: "Rice & Biryani", price: 3850, image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80", tag: "Chef Special", desc: "Serves 3-4. Aromatic mandi rice topped with slow roasted mutton shank & grilled chicken." },
+      { id: 2, name: "Mutton Shinwari Karahi (1/2 KG)", category: "Karahi & Handi", price: 2450, image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=600&q=80", tag: "Bestseller", desc: "Cooked in fresh lamb fat with tomatoes, sea salt, and green chillies." },
+      { id: 3, name: "Chillam Dar Mutton Biryani", category: "Rice & Biryani", price: 1650, image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=600&q=80", tag: "Must Try", desc: "Sealed claypot dum biryani infused with fresh saffron and spicy tender mutton." },
+      { id: 4, name: "Diya Kebab Platter", category: "BBQ & Grills", price: 1850, image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80", tag: "Hot", desc: "Charbroiled minced beef kebabs served on traditional warm diya flame platters." },
+      { id: 5, name: "Joha Fish BBQ Fry", category: "Starters", price: 1950, image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80", tag: "Seasonal", desc: "Crispy lahori spiced river fish fillet grilled with lemon coriander marinade." },
+      { id: 6, name: "Special Chicken Reshmi Handi", category: "Karahi & Handi", price: 1750, image: "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=600&q=80", tag: "Creamy", desc: "Boneless chicken tenderloins simmered in heavy cream, butter & cashew gravy." },
+      { id: 7, name: "Garlic Butter Naan Basket", category: "Breads", price: 280, image: "https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=600&q=80", tag: "Fresh", desc: "Fresh tandoori naan glazed with roasted garlic cloves and clarified butter." },
+      { id: 8, name: "Shahi Gulab Jamun (3 Pcs)", category: "Desserts", price: 450, image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80", tag: "Sweet", desc: "Warm milk dumplings soaked in saffron cardamom syrup with silver leaf." },
+      { id: 9, name: "Mint Margarita Chiller", category: "Beverages", price: 390, image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80", tag: "Refreshing", desc: "Blended fresh mint leaves, lime juice, sprite, and black sea salt." }
+    ];
+
+    let selectedItems = [];
+
+    function renderMenu(items) {
+      const grid = document.getElementById('menuGrid');
+      grid.innerHTML = '';
+
+      if (items.length === 0) {
+        grid.innerHTML = `<div class="col-span-full text-center text-ivory-cream/50 py-12">No menu items match your search filter.</div>`;
+        return;
+      }
+
+      items.forEach(item => {
+        const isSelected = selectedItems.some(i => i.id === item.id);
+        const card = document.createElement('div');
+        card.className = "bg-forest border border-gold/20 rounded-lg overflow-hidden flex flex-col justify-between hover:border-gold/50 transition-all shadow-md group";
+        
+        card.innerHTML = `
+          <div>
+            <div class="relative h-44 overflow-hidden">
+              <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-3 left-3 bg-forest-dark/90 text-gold text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded border border-gold/30">
+                ${item.tag}
+              </span>
+            </div>
+            <div class="p-5">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="font-display font-bold text-base text-ivory">${item.name}</h4>
+                <span class="text-gold font-bold text-sm shrink-0 ml-2">PKR ${item.price.toLocaleString()}</span>
+              </div>
+              <p class="text-ivory-cream/70 text-xs leading-relaxed line-clamp-2">${item.desc}</p>
+            </div>
+          </div>
+          <div class="px-5 pb-5">
+            <button onclick="toggleSelectItem(${item.id})" class="w-full text-xs font-bold uppercase tracking-wider py-2 rounded transition-all flex items-center justify-center gap-2 ${isSelected ? 'bg-gold text-forest-dark' : 'border border-gold/40 text-gold hover:bg-gold/10'}">
+              ${isSelected ? '<i class="fa-solid fa-check"></i> Added' : '<i class="fa-solid fa-plus"></i> Select Dish'}
+            </button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function filterCategory(category) {
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        btn.classList.remove('active', 'bg-gold', 'text-forest-dark');
+        btn.classList.add('bg-forest', 'text-ivory');
+      });
+
+      event.target.classList.add('active', 'bg-gold', 'text-forest-dark');
+      event.target.classList.remove('bg-forest', 'text-ivory');
+
+      if (category === 'All') {
+        renderMenu(menuData);
+      } else {
+        const filtered = menuData.filter(item => item.category === category);
+        renderMenu(filtered);
+      }
+    }
+
+    function toggleSelectItem(id) {
+      const item = menuData.find(i => i.id === id);
+      const index = selectedItems.findIndex(i => i.id === id);
+
+      if (index > -1) {
+        selectedItems.splice(index, 1);
+      } else {
+        selectedItems.push(item);
+      }
+
+      updateOrderSummary();
+      const currentCategory = document.querySelector('.cat-btn.active').innerText;
+      if (currentCategory === 'All Items') renderMenu(menuData);
+      else filterCategory(currentCategory);
+    }
+
+    function quickAdd(name, price) {
+      const existing = selectedItems.find(i => i.name === name);
+      if (!existing) {
+        selectedItems.push({ id: Date.now(), name, price });
+        updateOrderSummary();
+      }
+      openModalWithItems();
+    }
+
+    function updateOrderSummary() {
+      const countEl = document.getElementById('selectedItemsCount');
+      const priceEl = document.getElementById('totalPriceCalc');
+      
+      const total = selectedItems.reduce((sum, item) => sum + item.price, 0);
+      countEl.innerText = `${selectedItems.length} items selected in your inquiry calculation.`;
+      priceEl.innerText = `PKR ${total.toLocaleString()}`;
+    }
+
+    function toggleMobileMenu() {
+      const drawer = document.getElementById('mobileDrawer');
+      drawer.classList.toggle('hidden');
+    }
+
+    document.getElementById('mobileMenuBtn').addEventListener('click', toggleMobileMenu);
+
+    function openModal() {
+      document.getElementById('reservationModal').classList.remove('hidden');
+      document.getElementById('reservationModal').classList.add('flex');
+    }
+
+    function closeModal() {
+      document.getElementById('reservationModal').classList.add('hidden');
+      document.getElementById('reservationModal').classList.remove('flex');
+    }
+
+    function openModalWithItems() {
+      openModal();
+      if (selectedItems.length > 0) {
+        const itemNames = selectedItems.map(i => i.name).join(', ');
+        document.getElementById('modalNotes').value = `Selected Dishes: ${itemNames}`;
+      }
+    }
+
+    function handleReservation(e) {
+      e.preventDefault();
+      alert("Thank you! Your reservation inquiry for AlKhan Heritage Lahore has been received. Our team will contact you shortly.");
+      closeModal();
+    }
+
+    function openLightbox(imgUrl, caption) {
+      document.getElementById('lightboxImg').src = imgUrl;
+      document.getElementById('lightboxCaption').innerText = caption;
+      document.getElementById('lightbox').classList.remove('hidden');
+      document.getElementById('lightbox').classList.add('flex');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.add('hidden');
+      document.getElementById('lightbox').classList.remove('flex');
+    }
+
+    /* Search Listener */
+    document.getElementById('menuSearch').addEventListener('input', function(e) {
+      const term = e.target.value.toLowerCase();
+      const filtered = menuData.filter(item => 
+        item.name.toLowerCase().includes(term) || 
+        item.desc.toLowerCase().includes(term)
+      );
+      renderMenu(filtered);
+    });
+
+    // Initial Render
+    window.onload = function() {
+      renderMenu(menuData);
+    };
+  </script>
+</body>
+</html>
